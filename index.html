@@ -6,40 +6,14 @@
     <title></title>
   </head>
   <body>
+<script
+  src="https://cdn.kustomerapp.com/chat-web/widget.js"
+  data-kustomer-api-key='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMDIwOGNhMTBjZWIyMDA5NjNlYmQ2MCIsInVzZXIiOiI2MDAyMDhjOTQ2YmZlODc0OTc4MmIxN2UiLCJvcmciOiI1ZTE2MDQ1ZGZmNWU4ODAwMTNlOWFlYzYiLCJvcmdOYW1lIjoienp6LWp1c3Rpbi1vY2llIiwidXNlclR5cGUiOiJtYWNoaW5lIiwicG9kIjoicHJvZDEiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjYwMDIwOGM5NDZiZmU4NzQ5NzgyYjE3ZSJ9.-OLfBtBK2LX-CUlb6V07fvuRJAoIai-_q96ligmoCKE'
+></script>
 <script>
-  (function(window, document, kustomer, undefined) {
-    window.Kustomer = kustomer;
-    kustomer._q = [];
-    kustomer._i = [];
-    kustomer.init = function(API_KEY) {
-      function applyMethod(kustomer, methodName) {
-        kustomer[methodName] = function() {
-          kustomer._q.push(
-            [methodName].concat(Array.prototype.slice.call(arguments, 0))
-          )
-        }
-      }
-
-      var methods = "init identify track describe start stop open close clear on".split(' ');
-      for (var i = 0; i < methods.length; i++) {
-        applyMethod(kustomer, methods[i]);
-      }
-      kustomer._i.push(API_KEY);
-    };
-
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = "https://cdn.kustomerapp.com/cw/sdk.v1.1.min.js";
-    var element = document.getElementsByTagName("script")[0];
-    element.parentNode.insertBefore(script, element);
-  })(this, document, window.Kustomer || {});
-
-  // Add your API Key here
-  Kustomer.init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMDIwNjRkZDUxOWQyMDA5NmVhMWY2MCIsInVzZXIiOiI2MDAyMDY0ZDFjZmVkODBkYmM5ZjFiMDgiLCJvcmciOiI1ZWQwMGQ0MTIzOWRiMDAwMTIzMmQ4MzMiLCJvcmdOYW1lIjoibWlzZml0c21hcmtldHMiLCJ1c2VyVHlwZSI6Im1hY2hpbmUiLCJwb2QiOiJwcm9kMSIsInJvbGVzIjpbIm9yZy50cmFja2luZyJdLCJhdWQiOiJ1cm46Y29uc3VtZXIiLCJpc3MiOiJ1cm46YXBpIiwic3ViIjoiNjAwMjA2NGQxY2ZlZDgwZGJjOWYxYjA4In0.9hUXYIGiKJ0oH4bUsQK2k7hJ7mlH9mSR9Dq7qtpqt1I');
-
-  // Start the chat client
-  Kustomer.start();
+  Kustomer.start({
+    brandId: '5e160461d9d4b2001312e3b5'
+  });
 </script>
   </body>
 
